@@ -428,3 +428,97 @@ p {
   color: rgb(255, 165, 0);
 }
 }
+@media (max-width: 1024px) {
+  .navlinks {
+    padding: 20px;
+  }
+
+  .content {
+    width: 100%; /* Full width on smaller screens */
+    margin-top: 20px;
+  }
+
+  .hero {
+    margin: 0 50px;
+  }
+
+  .section-background {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .background {
+    width: 300px; /* Adjusted width */
+    height: 300px; /* Adjusted height */
+  }
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .navlinks {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navlinks.open {
+    display: flex;
+  }
+
+  .navitems {
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .hero {
+    margin: 0 20px; /* Reduced margin */
+  }
+
+  .background {
+    width: 250px; /* Adjusted width for mobile */
+    height: 250px; /* Adjusted height for mobile */
+  }
+
+  .box-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+
+  .footer {
+    padding: 10px 0; /* Reduced padding for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .heading1 {
+    font-size: 30px; /* Smaller font size */
+  }
+
+  .content h1 {
+    font-size: 28px; /* Smaller heading */
+  }
+
+  .content h2 {
+    font-size: 24px; /* Smaller subheading */
+  }
+
+  .box {
+    width: 100%; /* Full width */
+  }
+
+  .bigger-box {
+    width: 100%; /* Full width for larger boxes */
+  }
+}
